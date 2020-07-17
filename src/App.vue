@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <mian-tab-bar></mian-tab-bar>
+    <mian-tab-bar class="main-tab-bar"></mian-tab-bar>
     <router-view></router-view>
 
   </div>
@@ -19,4 +19,9 @@
 
 <style>
   @import url("assets/css/base.css");
+
+  .main-tab-bar {
+    position: sticky;
+    z-index: 10;
+  }
 </style>

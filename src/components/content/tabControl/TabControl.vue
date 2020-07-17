@@ -29,6 +29,7 @@
     methods: {
       itemClick (index) {
         this.currentIndex = index
+        this.$emit("tabClick", index)
       }
     }
   }
@@ -48,12 +49,12 @@
     flex: 1;
   }
 
-  .active {
-    color: var(--color-high-text);
+  .tab-control-item span {
+    padding: 5px;
   }
 
-  .tab-bar-item span {
-    padding: 5px;
+  .active {
+    color: var(--color-high-text);
   }
 
   .active span {
